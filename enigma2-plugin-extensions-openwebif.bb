@@ -12,6 +12,8 @@ PKGV = "1+git${GITPKGV}"
 
 require openplugins-distutils.inc
 
+SRC_URI = "git://github.com/aOpenPLi/e2openplugin-${MODULE}.git;protocol=git"
+
 # Just a quick hack to "compile" it
 do_compile() {
 	cheetah-compile -R --nobackup ${S}/plugin
